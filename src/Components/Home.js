@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from './Slider/Slider'
 import Cards from "./Cards";
 import Email from "./Email";
-
+import Navbar from './Navbar';
 
 const Feature = () => {
     return(

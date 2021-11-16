@@ -3,7 +3,7 @@ import './App.css';
 import * as ReactBootStrap from "react-bootstrap";
 import Login from "./Components/Login";
 
-import Features from "./Components/Features";
+import Home from "./Components/Home";
 import Elements from "./Components/Elements";
 import MoreDeets from "./Components/MoreDeets";
 
@@ -26,9 +26,11 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/features" component={Features}>
-              <Features />
-              
+        <Route path="/" component={Home}>
+              <Home />    
+          </Route>
+          <Route path="/home" component={Home}>
+              <Home />    
           </Route>
           <Route path="/elements" component={Elements}>
             <Elements />
